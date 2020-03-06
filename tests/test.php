@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__ . '/../vendor/autoload.php'; // Autoload files using Composer autoload
 
-use LaravelFlashes\Flashes;
+use SymfonyLikeFlashes\Flashes;
 
 Flashes::add('success','test');
 
