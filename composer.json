@@ -1,0 +1,19 @@
+{
+    "name": "fabricio872/symfony-like-flashes",
+    "description": "Package for Flash messages similar to Symfony Flashes",
+    "require": {
+        "php": ">=7.4"
+    },
+    "authors": [
+        {
+            "name": "Fabricio Jakubec",
+            "email": "fabricio872@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-0": {
+            "SymfonyLikeFlashes": "src/"
+        }
+    }
+}
