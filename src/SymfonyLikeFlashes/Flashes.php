@@ -2,22 +2,24 @@
 
 namespace SymfonyLikeFlashes;
 
+use Illuminate\Support\Facades\Session;
+
 class Flashes
 {
     public static function add(string $type, string $message): void
     {
-        $flashes = $_SESSION['flashes'];
+        $flashes = Session::get('flashes');
         $flash = new \stdClass();
         $flash->type = $type;
         $flash->message = $message;
         $flashes[] = $flash;
-        $_SESSION['flashes'] = $flashes;
+        Session::put('flashes', $flashes);
     }
 
     public static function getFlashes(): array
     {
-        $flashes = $_SESSION['flashes'];
-        unset($_SESSION['flashes']);
+        $flashes = Session::get('flashes');
+        Session::remove('flashes');
         return (array)$flashes;
     }
 }

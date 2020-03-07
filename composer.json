@@ -2,7 +2,9 @@
     "name": "fabricio872/symfony-like-flashes",
     "description": "Package for Flash messages similar to Symfony Flashes",
     "require": {
-        "php": ">=7.4"
+        "php": ">=7.4",
+        "illuminate/support": "^8.0@dev",
+        "illuminate/session": "^8.0@dev"
     },
     "authors": [
         {
