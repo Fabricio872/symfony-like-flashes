@@ -3,8 +3,7 @@
     "description": "Package for Flash messages similar to Symfony Flashes",
     "require": {
         "php": ">=7.4",
-        "illuminate/support": "^8.0@dev",
-        "illuminate/session": "^8.0@dev"
+        "illuminate/support": "^6.0"
     },
     "authors": [
         {
